@@ -33,7 +33,7 @@ public:
     QPushButton *btnMatrix;
     QTableWidget *tblMatrixA;
     QTableWidget *tblMatrixB;
-    QTableWidget *tableWidget;
+    QTableWidget *tblResultMatrix;
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
@@ -104,25 +104,25 @@ public:
         tblMatrixB->setVerticalHeaderItem(2, __qtablewidgetitem14);
         tblMatrixB->setObjectName(QString::fromUtf8("tblMatrixB"));
         tblMatrixB->setGeometry(QRect(660, 10, 421, 131));
-        tableWidget = new QTableWidget(centralwidget);
-        if (tableWidget->columnCount() < 4)
-            tableWidget->setColumnCount(4);
+        tblResultMatrix = new QTableWidget(centralwidget);
+        if (tblResultMatrix->columnCount() < 4)
+            tblResultMatrix->setColumnCount(4);
         QTableWidgetItem *__qtablewidgetitem15 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem15);
+        tblResultMatrix->setHorizontalHeaderItem(0, __qtablewidgetitem15);
         QTableWidgetItem *__qtablewidgetitem16 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem16);
+        tblResultMatrix->setHorizontalHeaderItem(1, __qtablewidgetitem16);
         QTableWidgetItem *__qtablewidgetitem17 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem17);
+        tblResultMatrix->setHorizontalHeaderItem(2, __qtablewidgetitem17);
         QTableWidgetItem *__qtablewidgetitem18 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem18);
-        if (tableWidget->rowCount() < 2)
-            tableWidget->setRowCount(2);
+        tblResultMatrix->setHorizontalHeaderItem(3, __qtablewidgetitem18);
+        if (tblResultMatrix->rowCount() < 2)
+            tblResultMatrix->setRowCount(2);
         QTableWidgetItem *__qtablewidgetitem19 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(0, __qtablewidgetitem19);
+        tblResultMatrix->setVerticalHeaderItem(0, __qtablewidgetitem19);
         QTableWidgetItem *__qtablewidgetitem20 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(1, __qtablewidgetitem20);
-        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
-        tableWidget->setGeometry(QRect(1120, 10, 421, 131));
+        tblResultMatrix->setVerticalHeaderItem(1, __qtablewidgetitem20);
+        tblResultMatrix->setObjectName(QString::fromUtf8("tblResultMatrix"));
+        tblResultMatrix->setGeometry(QRect(1120, 10, 421, 131));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(640, 60, 49, 16));
@@ -210,17 +210,17 @@ public:
         ___qtablewidgetitem13->setText(QCoreApplication::translate("MainWindow", "2", nullptr));
         QTableWidgetItem *___qtablewidgetitem14 = tblMatrixB->verticalHeaderItem(2);
         ___qtablewidgetitem14->setText(QCoreApplication::translate("MainWindow", "3", nullptr));
-        QTableWidgetItem *___qtablewidgetitem15 = tableWidget->horizontalHeaderItem(0);
+        QTableWidgetItem *___qtablewidgetitem15 = tblResultMatrix->horizontalHeaderItem(0);
         ___qtablewidgetitem15->setText(QCoreApplication::translate("MainWindow", "1(real)", nullptr));
-        QTableWidgetItem *___qtablewidgetitem16 = tableWidget->horizontalHeaderItem(1);
+        QTableWidgetItem *___qtablewidgetitem16 = tblResultMatrix->horizontalHeaderItem(1);
         ___qtablewidgetitem16->setText(QCoreApplication::translate("MainWindow", "1(imag)", nullptr));
-        QTableWidgetItem *___qtablewidgetitem17 = tableWidget->horizontalHeaderItem(2);
+        QTableWidgetItem *___qtablewidgetitem17 = tblResultMatrix->horizontalHeaderItem(2);
         ___qtablewidgetitem17->setText(QCoreApplication::translate("MainWindow", "2(real)", nullptr));
-        QTableWidgetItem *___qtablewidgetitem18 = tableWidget->horizontalHeaderItem(3);
+        QTableWidgetItem *___qtablewidgetitem18 = tblResultMatrix->horizontalHeaderItem(3);
         ___qtablewidgetitem18->setText(QCoreApplication::translate("MainWindow", "2(imag)", nullptr));
-        QTableWidgetItem *___qtablewidgetitem19 = tableWidget->verticalHeaderItem(0);
+        QTableWidgetItem *___qtablewidgetitem19 = tblResultMatrix->verticalHeaderItem(0);
         ___qtablewidgetitem19->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
-        QTableWidgetItem *___qtablewidgetitem20 = tableWidget->verticalHeaderItem(1);
+        QTableWidgetItem *___qtablewidgetitem20 = tblResultMatrix->verticalHeaderItem(1);
         ___qtablewidgetitem20->setText(QCoreApplication::translate("MainWindow", "2", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "*", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "=", nullptr));

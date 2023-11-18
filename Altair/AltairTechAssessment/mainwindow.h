@@ -12,12 +12,17 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    //Constructor
     MainWindow(QWidget *parent = nullptr);
+
+    // Destructor
     ~MainWindow();
 
 private slots:
+    // n click event for matrix button
     void on_btnMatrix_clicked();
 
+    // On click even for Floyd button
     void on_btnFloyd_clicked();
 
 private:
